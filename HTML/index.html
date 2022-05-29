@@ -8,22 +8,12 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/script.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script type="module" src="js/main.mjs"></script>
 </head>
 <body>
-    <main id="main-block">
-        <section id="main-section">
-
-            <div id="richtext-container">
-                <div id="richtext-header">
-                
-                </div>
-                <div id="richtext-content" contenteditable="true">
-                
-                </div>
-            </div>
-
-        </section>
+    <main id="main-block">        
+        <open-rt></open-rt>
     </main>
 </body>
 </html>
