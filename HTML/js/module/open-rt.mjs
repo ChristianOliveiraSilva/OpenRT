@@ -1,6 +1,9 @@
 import Component from './component.mjs';
 
 class OpenRT extends Component {
+
+    static plugins = [];
+
     constructor() {
         super(`
             <div id="richtext-container">
@@ -10,7 +13,15 @@ class OpenRT extends Component {
         `,`
 
         `);
+
+        this.constructor.plugins.forEach(plugin => {
+            plugin.sayHello();
+        });
         
+    }
+
+    static setPlugin(plugin) {
+        this.plugins.push(plugin)
     }
     
     connectedCallback() {

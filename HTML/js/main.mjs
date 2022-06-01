@@ -1,6 +1,6 @@
-
 'use strict';
 import OpenRT from './module/open-rt.mjs';
+import PluginExample from './plugin/PluginExample.mjs';
 
 (function() {
     if (!(window.customElements && document.body.attachShadow)) {
@@ -8,5 +8,6 @@ import OpenRT from './module/open-rt.mjs';
         return;
     }
 
+    OpenRT.setPlugin(new PluginExample);
     customElements.define('open-rt', OpenRT)
 })();
