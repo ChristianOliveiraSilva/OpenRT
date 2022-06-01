@@ -1,4 +1,14 @@
 
 export default class Plugin {
-    sayHello() { console.log('hello') }
+    run() {
+        console.log('To run this plugin you must use the method run')
+    }
+
+    exit() {
+
+    }
+
+    css() {
+
+    }
 }
