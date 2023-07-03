@@ -1,0 +1,18 @@
+{
+  "name": "openrt-html",
+  "version": "1.0.0",
+  "description": "OpenRT implementation in HTML and Shadow DOM",
+  "main": "js/main.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openrt",
+    "html"
+  ],
+  "author": "ChristianOliveiraSilva",
+  "license": "ISC",
+  "dependencies": {
+    "openrt-html": "^1.0.0"
+  }
+}
